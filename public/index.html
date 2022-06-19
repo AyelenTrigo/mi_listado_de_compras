@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Mi lista de compras</title>
+</head>
+<body>
+    <header>
+        <div id="titulo_header">Mi lista de compras</div>
+    </header>
+
+    <div class="contenedor">
+    <!-- Page 2 -->        
+    <section id="contenedor_carga">
+            <div class="cargas">
+                <h3>Agregá un producto</h3>
+                <div class="_carga">
+                    <input type="text" placeholder="Título" id="titulo" required="true">
+            </div>
+            <div class="_carga">
+                <select name="Iconos" id="iconos" placeholder="Selecciona un ícono" id="iconos" class="_carga" required="true">
+                    <option selected value="">Tipo de producto</option>
+                    <option value="vegetales.png">🥦 Verduras</option>
+                    <option value="frutas.png">🍎 Frutas</option>
+                    <option value="bebidas.png">🍺 Bebidas</option>
+                    <option value="pan.png">🥐 Panadería</option>
+                    <option value="carnes.png">🍗 Carnicaría</option>
+                    <option value="lacteos.png">🧀 Lacteos</option>
+                    <option value="veterinario.png">🐱 Veterinaria</option>
+                    <option value="limpieza.png">🧹 Limpieza</option>
+                    <option value="electronica.png">💻 Electrónica</option>
+                    <option value="ropa.png">👕 Indumentaria</option>
+                    <option value="calzado.png">👟 Calzado</option>
+                    <option value="ferreteria.png">🔨 Ferretería</option>
+                </select>
+                
+            </div>
+            <span id="warning" style="display: none;">
+                *Rellená los campos</span>
+            <div class="carga2">
+                <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea></div>
+            <button type="button" id="add">Agregar</button>
+<div></div>
+    </section>
+    <!-- Page 1 -->
+        <section id="lista_vacia">
+            <div class="contenedor_lista_vacia">
+                <h2>No hay productos para comprar</h2>
+            <span><img src="/image/sad_face.png" alt="" /></span>
+            </div>
+            <button type="button" id="sumar">+</button>
+        </section>
+    <!-- Page 3 -->
+    <section id="lista_llena">
+        <div id="list"><h2> Listado de productos</h2></div>
+        <div>
+            <button type="button" id="sumarOtro" >+</button>
+        </div>
+    </section>
+    <!-- Page 4 -->
+    <div id="detalle_producto" class="contenedor">
+            
+        </div>
+</div>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
